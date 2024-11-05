@@ -11,7 +11,7 @@ This note covers best practices for structuring your environment directories in 
 
 A typical structure suggested for managing multiple environments in Terraform might look like this:
 
-![alt text](image-1.png)
+![alt text](image-2.png)
 
 
 Why Structure Matters: Organizing Terraform projects helps scale effectively, supports team collaboration, and enhances security.
@@ -21,6 +21,8 @@ Layered Setup: Use separate directories for each environment (e.g., development,
 Centralized Modules: Store reusable modules in a central repository. Each environment references specific versions, promoting consistency and controlled updates across projects.
 
 This structure keeps everything manageable, version-controlled, and adaptable as the project grows.
+
+![alt text](image-1.png)
 
 **main.tf:**
 Defines core resources for the environment by referencing modules from the central repository. Each module is tagged to ensure a specific version is used.
