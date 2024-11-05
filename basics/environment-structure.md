@@ -1,8 +1,7 @@
 # Terraform Environment Directory Structure
 
-**Source**: [TechOpsExamples Newsletter - Environment Directory Structure](https://www.techopsexamples.com/p/guide-to-a-well-structured-terraform-project)
+**Source & Credits**: Notes are based on insights from the [TechOpsExamples Newsletter - Environment Directory Structure](https://www.techopsexamples.com/p/guide-to-a-well-structured-terraform-project)
 
-**Credits**: Notes are based on insights from the [TechOpsExamples Newsletter](https://techopsexamples.com/newsletter-link).
 
 ## Overview
 
@@ -23,19 +22,19 @@ Centralized Modules: Store reusable modules in a central repository. Each enviro
 
 This structure keeps everything manageable, version-controlled, and adaptable as the project grows.
 
-**main. tf**
+**main.tf:**
 Defines core resources for the environment by referencing modules from the central repository. Each module is tagged to ensure a specific version is used.
 
-**variables. tf**
+**variables.tf:**
 Declares input variables, making the configuration adaptable. For example, instance_type might vary between environments (e.g., t2.micro in dev, t3.large in prod).
 
-**provider. tf**
+**provider.tf:**
 Configures the cloud provider and backend for remote state storage, which tracks deployed resources. This setup is crucial for collaborative workflows.
 
-**outputs. tf**
+**outputs.tf:**
 Defines output values, making it easy to retrieve information, like IP addresses or resource IDs, after deployment.
 
-**dev. tfvars (Environment-Specific Variables)**
+**dev.tfvars (Environment-Specific Variables):**
 Contains values for variables declared in variables. tf, tailored to this environment. Each environment (dev, staging, prod) will have its own .tfvars file.
 
 Setting up a centralized modules repository in Terraform:
