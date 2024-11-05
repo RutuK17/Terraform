@@ -43,11 +43,13 @@ Setting up a centralized modules repository in Terraform:
 
 
 **Organize by Type:** Use folders for different types of modules (e.g., network, compute) within a central repository.
+
 **Version Control:** Use specific version tags for each module to keep configurations stable and manageable.
+
 **Best Practices:**
-Centralize modules in a remote repository for consistent usage across projects.
-Prioritize reusability by refactoring modules as projects expand.
-Use variables instead of hardcoded values for flexibility.
-Maintain focused, single-purpose modules with clear input/output definitions.
-Include README documentation and conduct independent testing for each module.
-With this approach, teams can confidently manage and deploy resources in multiple environments.
+- Centralize modules in a remote repository for consistent usage across projects.
+- Prioritize reusability by refactoring modules as projects expand.
+- Use variables instead of hardcoded values for flexibility.
+- Maintain focused, single-purpose modules with clear input/output definitions.
+- Include README documentation and conduct independent testing for each module.
+- With this approach, teams can confidently manage and deploy resources in multiple environments.
