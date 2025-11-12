@@ -18,6 +18,8 @@ Example: The AWS provider includes resources for EC2, EBS, and ELB.
 You can create your own provider if you have an API to interact with, but thousands already exist in the Terraform Registry (https://registry.terraform.io/browse/providers)
 
 
+** In simple terms, a Terraform provider is a plugin that lets Terraform talk to and manage different services or platforms, like cloud providers or other tools. **
+
 
 ### References: ###
 
