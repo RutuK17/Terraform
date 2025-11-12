@@ -17,3 +17,10 @@ Example: The AWS provider includes resources for EC2, EBS, and ELB.
 ### Extensibility: ###
 You can create your own provider if you have an API to interact with, but thousands already exist in the Terraform Registry (https://registry.terraform.io/browse/providers)
 
+
+
+### References: ###
+
+Provider - https://developer.hashicorp.com/terraform/language/providers
+Article - https://techblog.flaviusdinu.com/terraform-from-0-to-hero-2-providers-8d2c97ef6cf1
+AWS provider - https://registry.terraform.io/providers/hashicorp/aws/latest/docs
