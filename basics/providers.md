@@ -22,5 +22,7 @@ You can create your own provider if you have an API to interact with, but thousa
 ### References: ###
 
 Provider - https://developer.hashicorp.com/terraform/language/providers
+
 Article - https://techblog.flaviusdinu.com/terraform-from-0-to-hero-2-providers-8d2c97ef6cf1
+
 AWS provider - https://registry.terraform.io/providers/hashicorp/aws/latest/docs
